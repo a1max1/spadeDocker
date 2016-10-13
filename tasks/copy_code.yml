@@ -1,0 +1,8 @@
+--- 
+# These tasks copy code
+ 
+#  - name: Copy the code from repository 
+ #   copy: src=/etc/ansible/page2.htm dest=/var/www/html/page2.htm owner=root group=root mode=0644                           
+#holding off on this for now
+#  - name: Creates the index.html file 
+ #   template: src=index.html.j2 dest=/var/www/html/index.html 
