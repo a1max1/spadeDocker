@@ -1,4 +1,6 @@
 --- 
-- include: install_httpd.yml
+- include: install_httpdUbuntu.yml
   when: ansible_distribution in [ 'Debian', 'Ubuntu' ] 
+- include: install_apacheCentOS.yml
+  when: ansible_distribution in [ 'CentOS' ]
 - include: copy_code.yml 
