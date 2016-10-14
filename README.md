@@ -3,7 +3,7 @@ spadeDocker
 
 An Ansible role that installs apache and is tested through Travis
 on multiple platforms using Docker
-This is only built as a sample for glaxy/travis/docker integration
+This is only built as a sample for glaxy/travis/docker integration 
 
 [![Build Status](https://travis-ci.org/a1max1/spadeDocker.svg?branch=master)](https://travis-ci.org/a1max1/spadeDocker)
 
