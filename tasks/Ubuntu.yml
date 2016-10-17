@@ -5,7 +5,7 @@
      http_port: 80
      max_clients: 200                            
 
- - name: Install http and php e
+ - name: Ubbuntu Install http and php etc
    yum: name={{ item }} state=present 
    with_items: 
     - httpd

@@ -9,7 +9,7 @@
  # had to fix php to php5 and php-mysql to php5-mysql
  # and libsemanage-python and libselinux-python to python-all-dev
  # and httpd to apache2
- - name: Install http and php etc 
+ - name: RedHat Install http and php etc 
    apt: name={{ item }} state=present 
    with_items: 
     - apache2 
