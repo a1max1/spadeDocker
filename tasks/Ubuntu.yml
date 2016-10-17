@@ -1,0 +1,24 @@
+--- 
+# These tasks install http and the php modules. 
+
+ - set_fact:
+     http_port: 80
+     max_clients: 200                            
+
+ - name: Install http and php e
+   yum: name={{ item }} state=present 
+   with_items: 
+    - httpd
+    - php
+    - php-mysql
+    - git
+    - libsemanage-python 
+    - libselinux-python 
+
+ - name: write the apache config file                                                                                      
+   template: src=httpd.j2 dest=/etc/httpd/conf/httpd.conf                                           
+   notify:                                                                                                                 
+    - restart apache                                                                                                        
+
+ - name: http service state 
+   service: name=httpd state=started enabled=yes 

@@ -1,6 +1,6 @@
 --- 
-- include: install_httpdUbuntu.yml
-  when: ansible_distribution == 'Ubuntu' 
+- include: {{ ansible_os_family }}.yml
+#  when: ansible_distribution == 'Ubuntu' 
 # when: ansible_distribution in [ 'Debian', 'Ubuntu' ] 
 #- include: install_apacheCentOS.yml
 #  when: ansible_distribution == 'CentOS'
