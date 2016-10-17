@@ -2,7 +2,7 @@
 - include: RedHat.yml
   when: ansible_os_family == 'RedHat' 
 # when: ansible_distribution in [ 'Debian', 'Ubuntu' ] 
-#- include: install_apacheCentOS.yml
-#  when: ansible_distribution == 'CentOS'
+- include: Ubuntu.yml
+  when: ansible_os_family == 'Ubuntu'
 # when: ansible_distribution in [ 'CentOS' ]
-- include: copy_code.yml 
+#- include: copy_code.yml 
