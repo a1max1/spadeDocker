@@ -9,7 +9,7 @@ This is only built as a sample for glaxy/travis/docker integration
 
 Requirements
 ------------
-
+ 
 running apt-get vs yum
 
 Role Variables
