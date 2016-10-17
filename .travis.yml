@@ -44,5 +44,5 @@ script:
   - sudo docker stop "$(cat ${container_id})"
 
 notifications:
-  email: false
+#  email: false
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
